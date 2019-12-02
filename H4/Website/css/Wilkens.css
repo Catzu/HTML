@@ -46,3 +46,14 @@ td.green {
 td.blue {
     background-color: #ccffff;
 }
+
+.foo {
+    width:960px;
+    height: 100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.button {
+    
+}
