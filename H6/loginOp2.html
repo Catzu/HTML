@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Burton Education</title>
+    </head>
+    <style>
+        form ul {
+            float: left;
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        form ul li {
+            padding: 10px;
+        }
+
+        form ul li input {
+            position: absolute;
+            left: 180px;
+        }
+        
+        .een {
+            margin-left: 5px;
+        }
+
+        .twee {
+            margin-left:90px;
+        }
+
+        .box {
+            margin-left:18px;
+
+        }
+
+        textarea {
+            position: absolute;
+            resize: none;
+            margin-left:20px;
+        }
+
+        div {
+            float: left;
+            padding-top: 90px;
+            padding-left: 50px;
+        }
+
+        .boxes {
+            margin-left: 350px;
+        }
+
+        .buttons1 {
+            margin-top: 420px;
+            margin-left: 330px;
+        }
+
+        .buttons2 {
+            margin-top: 536px;
+        }
+
+        .checkbox1 {
+            position: absolute;
+            margin-left: 30px;
+        }
+
+        .checkbox2 {
+            position: absolute;
+            margin-left: 110px;
+        }
+
+        .checkbox3 {
+            position: absolute;
+            margin-left: 110px;
+        }
+
+    </style>
+    <body>
+        <form action="https://www.savatarian.com/html5/form.php" method="post">
+            <ul>
+                <li>
+                    <h2>Formulier</h2>
+                </li>
+                <li>
+                    <label for="voornaam"> Voornaam </label>
+                    <input type="text" name="voornaam">
+                </li>
+                <li>
+                    <label for="tussenvoegsel"> Tussenvoegsel </label>
+                    <input type="text" name="tussenvoegsel">
+                </li>
+                <li>
+                    <label for="achternaam"> Achternaam </label>
+                    <input type="text" name="achternaam">
+                </li>
+                <li>
+                    <label for="geslacht"> Geslacht </label>
+                    <input class="een" type="radio" name="geslacht" value="man">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Man
+                    <input class="twee" type="radio" name="geslacht" value="vrouw">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vrouw
+                </li>
+                <li>
+                    <label for="kleur-ogen"> Kleur Ogen </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="kleur-ogen"> 
+                        <option>Bruin</option>
+                        <option>Hazelnoot</option>
+                        <option>groen</option>
+                        <option>Amber en Geel</option>
+                        <option>Blauw</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="geboortedatum"> Geboortedatum </label>
+                    <input type="date" name="birthday">
+                </li>
+                <li>
+                    <label for="omschrijving"> Omschrijving&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <textarea class="box" cols="40" rows="10" name="omschrijving"></textarea>
+                </li>
+            </ul>
+            <div>
+            <ul>
+                <li>
+                    <label for="lekker-eten">Lekker eten:</label>
+                    <input class="boxes" type="checkbox" name="lekker-eten" value="sperciebonen">
+                    <span class="checkbox1">Sperciebonen</span><br>
+                    <input class="boxes" type="checkbox" name="lekker-eten" value="aardappelen">
+                    <span class="checkbox2">Aardappelen</span><br>
+                    <input class="boxes" type="checkbox" name="lekker-eten" value="hamburger">
+                    <span class="checkbox3">Hamburger</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input class="buttons1" type="submit" name="knop">
+                </li>
+            </ul>
+        </div>
+       </form>
+       <form action="index.html" method="get">
+        <input class="buttons2" type="submit" value="Annuleren" 
+             name="Submit" id="frm1_submit">
+    </form>
+    </body>
+</html>
